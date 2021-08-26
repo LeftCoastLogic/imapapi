@@ -50,7 +50,8 @@ function setConfig() {
 
   config = {
     NODE_ENV: NODE_ENV || 'development',
-    REDIS_URL: REDIS_URL || iMapConfig && iMapConfig.dbs && iMapConfig.dbs.redis || 'redis://127.0.0.1:6379/8',
+    // REDIS_URL: REDIS_URL || iMapConfig && iMapConfig.dbs && iMapConfig.dbs.redis || 'redis://127.0.0.1:6379/8',
+    REDIS_URL: REDIS_URL,
     API_HOST: API_HOST || iMapConfig && iMapConfig.host && iMapConfig.api.host || '127.0.0.1',
     API_PORT: API_PORT || iMapConfig && iMapConfig.api && iMapConfig.api.port || '3000',
     API_MAX_SIZE: API_MAX_SIZE || iMapConfig && iMapConfig.api && iMapConfig.api.maxSize || '5M',
